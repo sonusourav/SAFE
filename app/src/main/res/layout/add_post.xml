@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/add_caption_layout"
+      android:layout_margin="@dimen/activity_horizontal_margin"
+      app:hintEnabled="false">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_title1"
+        android:textColorHint="@color/grey"
+        android:hint="Doc Title" />
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/add_length"
+      android:layout_below="@id/add_caption_layout"
+      android:layout_margin="@dimen/activity_horizontal_margin"
+      app:hintEnabled="false">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/grey"
+        android:id="@+id/add_length1"
+        android:hint="Length" />
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/add_width"
+      android:layout_below="@id/add_length"
+      android:layout_margin="@dimen/activity_horizontal_margin"
+      app:hintEnabled="false">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/grey"
+        android:id="@+id/add_width1"
+        android:hint="Width" />
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/add_material"
+      android:layout_below="@id/add_width"
+      android:layout_margin="@dimen/activity_horizontal_margin"
+      app:hintEnabled="false">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_material1"
+        android:textColorHint="@color/grey"
+        android:hint="Material" />
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/add_location"
+      android:layout_below="@id/add_material"
+      android:layout_margin="@dimen/activity_horizontal_margin"
+      app:hintEnabled="false">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/grey"
+        android:id="@+id/add_location1"
+        android:hint="Location" />
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <Button
+      android:id="@+id/post_upload"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/add_location"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="20dp"
+      android:background="@color/grey"
+      android:paddingEnd="20dp"
+      android:paddingStart="20dp"
+      android:text=" Upload "
+      android:textColor="@color/white"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      />
+  <Button
+      android:id="@+id/post_add_btn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/post_upload"
+      android:layout_centerHorizontal="true"
+      android:layout_marginEnd="50dp"
+      android:layout_marginStart="50dp"
+      android:layout_marginTop="20dp"
+      android:background="@drawable/button_login"
+      android:text=" Add "
+      android:textColor="@color/white"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      />
+</RelativeLayout>

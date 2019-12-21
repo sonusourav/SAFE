@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "443862537045",
+    "firebase_url": "https://sadak-1576846373118.firebaseio.com",
+    "project_id": "sadak-1576846373118",
+    "storage_bucket": "sadak-1576846373118.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443862537045:android:be2fd517445512bd4e15dc",
+        "android_client_info": {
+          "package_name": "com.sonusourav.sadak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443862537045-rsmrqj19tbeb46gldrv95rn4u2r56ssh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sonusourav.sadak",
+            "certificate_hash": "b1f1e18e51b1790393538a9466572dec40ca0536"
+          }
+        },
+        {
+          "client_id": "443862537045-iv433pjpnrq9fq5chteeh2e3q9ivla8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoo6fs1VL6Vq4I22bdpFmUX54-ZpepUSs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443862537045-iv433pjpnrq9fq5chteeh2e3q9ivla8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

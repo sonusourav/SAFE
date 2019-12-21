@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    >
+
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/add_caption_layout"
+      android:layout_margin="@dimen/activity_horizontal_margin"
+      app:hintEnabled="false">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Length"
+        android:hint="Length" />
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/add_desc_layout"
+      android:layout_below="@id/add_caption_layout"
+      android:layout_margin="@dimen/activity_horizontal_margin"
+      app:hintEnabled="false">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Width"
+        android:hint="Width" />
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/add_length_layout"
+      android:layout_below="@id/add_desc_layout"
+      android:layout_margin="@dimen/activity_horizontal_margin"
+      app:hintEnabled="false">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comments"
+        android:hint="Comments" />
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <Button
+      android:id="@+id/doc_add_btn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/add_length_layout"
+      android:layout_centerHorizontal="true"
+      android:layout_marginEnd="50dp"
+      android:layout_marginStart="50dp"
+      android:layout_marginTop="20dp"
+      android:background="@drawable/button_login"
+      android:enabled="false"
+      android:text=" Add "
+      android:textColor="@color/white"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      />
+</RelativeLayout>

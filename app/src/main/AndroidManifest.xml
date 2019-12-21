@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sonusourav.sadak">
+
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:node="replace" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+  <application
+      android:name=".Utils.AppSingleton"
+      android:icon="@mipmap/safe_logo"
+      android:label="@string/app_name"
+      android:roundIcon="@mipmap/safe_logo"
+      android:supportsRtl="true"
+      android:theme="@style/AppTheme"
+      android:networkSecurityConfig="@xml/network_security_config"
+      android:usesCleartextTraffic="true"
+     >
+    <activity android:name=".Account.SplashActivity"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:windowSoftInputMode="adjustPan">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:name=".User.UpdatePassword"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:windowSoftInputMode="adjustPan"/>
+
+    <activity android:name=".Account.ForgotPassword"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:windowSoftInputMode="adjustPan"/>
+    <activity android:name=".Account.IntroScreen"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:windowSoftInputMode="adjustPan"/>
+    <activity android:name=".Account.LoginActivity"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:windowSoftInputMode="adjustPan"/>
+    <activity android:name=".Account.RegisterActivity"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:windowSoftInputMode="adjustPan"/>
+    <activity android:name=".activities.HomeActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.NoActionBar.TitleBar"/>
+    <activity android:name=".activities.DetailsActivity"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"/>
+  </application>
+
+</manifest>
